@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'sinatra'
-require 'mysql2'
+# require 'mysql2'
 
 set :port, 8080
 

@@ -2,4 +2,4 @@ source 'https://rubygems.org'
 
 gem 'rack'
 gem 'sinatra'
-gem 'mysql2'
+#gem 'mysql2'

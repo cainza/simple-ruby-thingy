@@ -16,5 +16,7 @@ COPY Gemfile /opt/app-root/src/
 COPY app.rb /opt/app-root/src/
 COPY config.ru /opt/app-root/src/
 
+RUN cd /opt/app-root/src/ && bundle install
+
 #EXPOSE 22
 CMD ["/bin/sh"]

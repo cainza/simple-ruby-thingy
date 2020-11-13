@@ -10,5 +10,5 @@ set :bind, '0.0.0.0'
 
 get '/' do
 #  test = $client.query("show mysq.tables;");
-  "Hello demo peeps<br>POD NAME: #{ENV['MY_POD_NAME']}<br>POD IP: #{ENV['MY_POD_IP']}<br>POD NODE: #{ENV['MY_NODE_NAME']}"
+  "Hello demo peeps<br>POD NAME: #{ENV['MY_POD_NAME']}<br>\nPOD IP: #{ENV['MY_POD_IP']}<br>\nPOD NODE: #{ENV['MY_NODE_NAME']}"
 end

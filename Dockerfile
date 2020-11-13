@@ -10,7 +10,11 @@ FROM docker.io/openshift/base-centos7
 MAINTAINER Francis Viviers
 
 # Install tools 
-RUN yum install -y ruby
+RUN yum install -y ruby rubygem-bundler
+# Add files
+COPY Gemfile /opt/app-root/src/
+COPY app.rb /opt/app-root/src/
+COPY config.ru /opt/app-root/src/
 
 #EXPOSE 22
 CMD ["/bin/sh"]

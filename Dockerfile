@@ -11,10 +11,12 @@ MAINTAINER Francis Viviers
 
 # Install tools 
 RUN yum install -y ruby rubygem-bundler 
+
 # Add files
-#COPY Gemfile /opt/app-root/src/
-#COPY app.rb /opt/app-root/src/
-#COPY config.ru /opt/app-root/src/
+RUN mkdir -p /demo && chmod 777 /demo
+COPY Gemfile /demo
+COPY app.rb /demo
+COPY config.ru /demo
 
 #RUN cd /opt/app-root/src/ && bundle install
 RUN gem install sinatra

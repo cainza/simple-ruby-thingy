@@ -4,7 +4,7 @@
 ############################################################
 
 # Set the base image to use to Ubuntu
-FROM centos:
+FROM centos:centos8
 
 # Set the file maintainer (your name - the file's author)
 MAINTAINER Francis Viviers

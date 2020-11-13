@@ -10,7 +10,7 @@ FROM docker.io/openshift/base-centos7
 MAINTAINER Francis Viviers
 
 # Install tools 
-RUN yum install -y net-tools 
+RUN yum install -y ruby
 
 #EXPOSE 22
 CMD ["/bin/sh"]

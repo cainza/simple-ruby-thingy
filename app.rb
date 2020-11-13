@@ -4,6 +4,7 @@ require 'sinatra'
 #require 'mysql2'
 
 set :port, 8080
+set :bind, '0.0.0.0'
 
 #$client = Mysql2::Client.new(:host => "mariadb-test", :username => "root", :password => "testrootpassword")
 

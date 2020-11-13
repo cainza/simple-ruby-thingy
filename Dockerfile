@@ -27,4 +27,4 @@ RUN chmod 777 /demo/startup.sh
 RUN gem install sinatra
 
 # Start
-CMD ["/demo/startup.sh"]
+CMD ["/demo/app.rb"]

@@ -17,9 +17,12 @@ RUN mkdir -p /demo && chmod 777 /demo
 COPY Gemfile /demo
 COPY app.rb /demo
 COPY config.ru /demo
+COPY startup.sh /demo
+
+RUN chmod 777 /demo/startup.sh
 
 #RUN cd /opt/app-root/src/ && bundle install
 RUN gem install sinatra
 
-#EXPOSE 22o
-CMD ["/bin/sh"]
+# Start
+CMD ["/demo/starup.sh"]

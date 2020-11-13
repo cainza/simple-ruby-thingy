@@ -9,6 +9,8 @@ FROM centos:centos8
 # Set the file maintainer (your name - the file's author)
 MAINTAINER Francis Viviers
 
+EXPOSE 8080
+
 # Install tools 
 RUN yum install -y ruby rubygem-bundler 
 

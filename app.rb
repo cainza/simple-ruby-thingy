@@ -9,5 +9,5 @@ set :port, 8080
 
 get '/' do
 #  test = $client.query("show mysq.tables;");
-  "Hello demo peeps<br>POD NAME: #{ENV['MY_POD_NAME']}<br>POD IP: #{ENV['MY_POD_IP']}<br>POD NODE: #{ENV['MY_POD_NODE']}<"
+  "Hello demo peeps<br>POD NAME: #{ENV['MY_POD_NAME']}<br>POD IP: #{ENV['MY_POD_IP']}<br>POD NODE: #{ENV['MY_POD_NODE']}"
 end

@@ -13,4 +13,4 @@ MAINTAINER Francis Viviers
 RUN yum install -y net-tools 
 
 #EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/bin/sh"]

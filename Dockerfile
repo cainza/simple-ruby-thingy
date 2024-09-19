@@ -4,7 +4,7 @@
 ############################################################
 
 # Set the base image to use to Ubuntu
-FROM centos:centos8
+FROM registry.access.redhat.com/ubi8/ubi
 
 # Set the file maintainer (your name - the file's author)
 MAINTAINER Francis Viviers

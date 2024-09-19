@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'sinatra'
-#require 'mysql2'
 
 set :port, 8080
 set :bind, '0.0.0.0'

@@ -9,5 +9,5 @@ set :bind, '0.0.0.0'
 
 get '/' do
 #  test = $client.query("show mysq.tables;");
-  "POD NAME: #{ENV['HOSTNAME']}<"
+  "POD NAME: #{ENV['HOSTNAME']}"
 end

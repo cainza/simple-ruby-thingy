@@ -25,6 +25,7 @@ RUN chmod 777 /demo/startup.sh
 
 #RUN cd /opt/app-root/src/ && bundle install
 RUN gem install sinatra
+RUN gem install rackup
 
 # Start
 CMD ["/demo/app.rb"]
